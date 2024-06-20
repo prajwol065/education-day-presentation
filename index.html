@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400:600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Education day presentation</title>
+  </head>
+  <body>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Colors</h1>
+        <div class="flex space-x-4">
+          <div>
+            <h2>Text colors</h2>
+            <p class="text-green-500">Tailwind is awesome</p>
+            <p class="text-emerald-500">Tailwind is awesome</p>
+          </div>
+          <div>
+            <h2>Underline</h2>
+            <p class="underline decoration-red-500">Tailwind is awesome</p>
+          </div>
+          <div>
+            <h2>Outline color</h2>
+            <button class="outline outline-blue-200">Hello</button>
+          </div>
+          <div>
+            <!-- make sure you change the shadow values during presentation -->
+            <h2>Box shadow color</h2>
+            <button class="shadow-md bg-cyan-500 shadow-purple-500/80">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Positioning</h1>
+
+        <div class="flex space-x-4">
+          <!-- Top right corner -->
+          <div>
+            <h2>Top right corner</h2>
+            <div class="relative h-32 w-32 bg-yellow-100 my-2">
+              <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+            </div>
+          </div>
+
+          <!-- Span top edge -->
+          <div>
+            <h2>Span top edge</h2>
+            <div class="relative h-32 w-32 bg-yellow-100 my-2">
+              <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Borders</h1>
+        <div class="flex space-x-4">
+          <div>
+            <h2>border width and colors</h2>
+            <div class="w-96 m-3 p-5 border-2 border-gray-800">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam, qui.
+            </div>
+          </div>
+
+          <div>
+            <h2>Border radius</h2>
+            <!-- make sure you change the rounded values during presentation -->
+            <div class="w-96 m-3 p-5 border-4 rounded-full border-blue-100">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam, qui.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Filters</h1>
+        <div class="flex space-x-4">
+          <div>
+            <!-- Do brightness 0, 75, 100, 200-->
+            <h2>Birghtness</h2>
+            <img src="../assets/img/img2.jpg" alt="" class="brightness-50" />
+          </div>
+          <div>
+            <h2>Invert</h2>
+            <!-- Invert -->
+            <img src="../assets/img/img4.jpg" alt="" class="invert" />
+          </div>
+          <div>
+            <h2>Sepia</h2>
+            <!-- Sepia -->
+            <img src="../assets/img/img4.jpg" alt="" class="sepia" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Transition and Transform</h1>
+        <div class="flex space-x-4">
+          <div>
+            <h2>Transition</h2>
+            <!-- make sure you change the duration during presentation -->
+            <button
+              class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 transition duration-1000"
+            >
+              Click me
+            </button>
+          </div>
+          <div>
+            <h2>Transition and transform</h2>
+            <button
+              class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:rotate-12 transition-transform duration-1000"
+            >
+              Click me
+            </button>
+          </div>
+          <div>
+            <h2>Transform and transition</h2>
+            <img
+              src="../assets/img/img1.jpg"
+              class="w-48 m-10 hover:rotate-180 hover:scale-75 hover:skew-x-12 transition duration-2000"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Animate</h1>
+        <!-- use animate pulse, ping, bounce, wiggle-->
+        <div class="min-h-6xl bg-slate-900">
+          <svg
+            class="w-48 text-white animate-spin mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Flex</h1>
+        <!-- Order-->
+        <div
+          class="flex flex-col gap-4 items-center justify-between my-2 w-full bg-gray-100"
+        >
+          <div class="order-3 p-10 border border-blue-300 bg-blue-100">01</div>
+          <div class="order-2 p-10 border border-blue-300 bg-blue-100">02</div>
+          <div class="order-4 p-10 border border-blue-300 bg-blue-100">03</div>
+          <div class="order-1 p-10 border border-blue-300 bg-blue-100">04</div>
+        </div>
+
+        <!-- Grow and shrink -->
+
+        <div class="flex mt-10 mb-24 w-full bg-gray-100">
+          <div
+            class="flex-initial w-64 p-10 border border-blue-300 bg-blue-100"
+          >
+            flex-initial (01)
+          </div>
+          <div class="flex-1 p-10 border border-blue-300 bg-blue-100">
+            flex-1 (02)
+          </div>
+          <div class="flex-auto p-10 border border-blue-300 bg-blue-100">
+            flex-auto (03)
+          </div>
+          <div class="p-10 border border-blue-300 bg-blue-100">
+            Regular Item (03)
+          </div>
+          <div class="p-10 border border-blue-300 bg-blue-100">
+            Regular Item (04)
+          </div>
+          <!-- <div class="flex-1 p-10 border border-blue-300 bg-blue-100">
+            flex-1 (05)
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl">
+        <h1>Group hover</h1>
+        <div
+          class="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
+        >
+          <div class="group">
+            <a href="#">Images</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="#">Icons</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto max-w-6xl">
+        <h2>Grid</h2>
+        <div class="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="images/image1.jpg" alt="" class="w-72" />
+            <div
+              class="absolute w-72 bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="images/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image 4 -->
+          <div class="relative group">
+            <img src="images/image4.jpg" alt="" class="w-72" />
+            <div
+              class="absolute w-72 bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="images/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image 5 -->
+          <div class="relative group">
+            <img src="images/image5.jpg" alt="" class="w-72" />
+            <div
+              class="absolute w-72 bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="images/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto max-w-6xl mt-12">
+        <div class="group">
+          <button
+            class="w-full transition-all duration-300 bg-blue-700 text-white border-b-8 border-b-blue-700 rounded-lg group-hover:border-t-8 group-hover:border-b-0 group-hover:bg-blue-700 group-hover:border-t-blue-700 group-hover:shadow-lg"
+          >
+            <div
+              class="px-8 py-4 duration-300 bg-blue-500 rounded-lg group-hover:bg-blue-700"
+            >
+              Add to cart
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-6xl mt-12">
+        <h1 class="my-8">Using custom colors and fonts</h1>
+        <div class="button-container">
+          <a
+            href="#"
+            class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
+            >Download for iOS
+          </a>
+          <a
+            href="#"
+            class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
+            >Download for Mac
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Social Icons -->
+      <div class="container mx-auto max-w-6xl mt-12">
+        <div class="flex justify-between w-32 py-1">
+          <a href="#"
+            ><img
+              src="images/icon-facebook.svg"
+              alt=""
+              class="duration-200 ficon"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/icon-twitter.svg"
+              alt=""
+              class="duration-200 ficon"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/icon-instagram.svg"
+              alt=""
+              class="duration-200 ficon"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto max-w-6xl mt-12">
+        <h1>Letter spacing and layer components</h1>
+        <div class="flex justify-center mt-10 w-72 mx-auto">
+          <button class="btn w-full">See All</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
